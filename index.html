@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Intro to Bootstrap 5</title>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p> 
+        <p>Welcome to my site</p> 
+      </div>
+      <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/photography.png" alt="photography" class="d-block" style="width:100%" height="1000px">
+      </div>
+      <div class="carousel-item">
+        <img src="images/graphics.jpg" alt="graphics" class="d-block" style="width:100%" height="1000px">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cinematography.jpg" alt="cinematography" class="d-block" style="width:100%" height="1000px">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Photography</h3>
+            <p>Photography is the art of capturing and preserving moments, emotions, and beauty through the medium of light and images. It involves the use of cameras, lenses, and various techniques to create visually appealing and meaningful compositions. Photographers often seek to tell a story, evoke feelings, or simply document reality by framing and illuminating their subjects in unique and compelling ways. The world of photography is vast and diverse, encompassing various genres such as landscape, portrait, wildlife, street, and abstract, among others. With the advancement of technology, photography has become more accessible, allowing both professionals and enthusiasts to explore and express their creativity in numerous ways.</p>
+            
+          </div>
+          <div class="col-sm-4">
+            <h3>Graphics</h3>
+            <p>A graphics description refers to a detailed explanation or narration of visual elements in an image, graphic, or illustration. This description helps individuals with visual impairments or those using screen readers to understand the content and context of the visual material. It may include elements such as colors, shapes, text, lines, and any other significant visual features.</p>
+            
+          </div>
+          <div class="col-sm-4">
+            <h3>Cinematography</h3>        
+            <p>Cinematography is the art and technique of capturing moving images through the lens of a camera. It involves the creative and technical aspects of filming a movie or a video, including lighting, camera movement, composition, color, and the overall visual storytelling. A cinematographer, also known as a director of photography, works closely with the director to bring their vision to life on screen, often making crucial decisions that impact the mood, tone, and atmosphere of a film. Through their skillful use of camera angles, lenses, and other visual elements, they help create a compelling and visually engaging experience for the audience.</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="container mt-3">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <div class="container mt-3">
+                        
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile 
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                
+               
+                <img src="images/photography2.png" class="img-thumbnail" alt="Cinque Terre" height="400px" width="400px">
+              </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <div class="container mt-3">
+                        
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                
+               
+                <img src="images/graphics.jpg" class="img-thumbnail" alt="Cinque Terre" height="400px" width="400px">
+              </div>
+            
+          </div>
+          <div class="col-sm-4">
+            <div class="container mt-3">
+                <h2>Card Image</h2>
+                <p>Image at the top (card-img-top):</p>
+                <div class="card" style="width:400px">
+                  <img class="card-img-top" src="images/img1.png" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <div class="container mt-3">
+                    
+                        
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                          See Profile
+                        </button>
+                      </div>
+                      
+                      <!-- The Modal -->
+                      <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title">Modal Heading</h4>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                      
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              Modal body..
+                            </div>
+                      
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
+                <br>
+                
+                
+               <img src="images/cinematography.jpg" class="rounded-circle" alt="Cinque Terre" height="400px" width="400px">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+        data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="https://github.com/"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">www.elybeltran.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
